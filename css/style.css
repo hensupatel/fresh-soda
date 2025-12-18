@@ -1302,7 +1302,7 @@
   overflow: hidden;
   border-radius: 50%;
   text-align: center;
-  background-color: rgba(190, 185, 150, 0.95);
+  background-color: rgb(138 226 158 / 95%);
   background-position: center center;
   background-repeat: no-repeat;
 }
