@@ -1499,7 +1499,7 @@
   height: 100px;
   border-radius: 50%;
   line-height: 50px;
-  background-color: #f67900;
+  background-color: #7a3619;
 }
 
 .recipe-block .inner-box h6 {
@@ -2754,7 +2754,7 @@
 .menus-section .menu-column .inner-column {
   position: relative;
   padding: 70px 70px;
-  background-color: #ffffff;
+  background-color: #ffffffa3;
 }
 
 .menus-section .menu-column .inner-column:before {
