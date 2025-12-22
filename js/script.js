@@ -91,6 +91,18 @@
 		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
 			$('body').removeClass('mobile-menu-visible');
 		});
+
+		//Close mobile menu when a navigation link is clicked
+		$(document).on('click', '.mobile-menu .navigation a', function(){
+			$('body').removeClass('mobile-menu-visible');
+		});
+
+		//Close mobile menu on ESC key
+		$(document).on('keyup', function(e){
+			if(e.key === 'Escape'){
+				$('body').removeClass('mobile-menu-visible');
+			}
+		});
 		
 	}
 	
@@ -514,23 +526,22 @@
 	}
 	
 	
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
+    if($('#contact-form').length && $.fn.validate){
+        $('#contact-form').validate({
+            rules: {
+                username: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
+                }
+            }
+        });
+    }
 	
 	
 	

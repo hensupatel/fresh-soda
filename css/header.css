@@ -938,7 +938,7 @@
 .mobile-menu .nav-logo {
   position: relative;
   padding: 20px 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .mobile-menu .nav-logo img {
@@ -1137,6 +1137,15 @@
 }
 
 .sticky-header .outer-box .mobile-nav-toggler {
+  position: relative;
+  float: right;
+  font-size: 28px;
+  color: #000000;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.sticky-header .mobile-nav-toggler {
   position: relative;
   float: right;
   font-size: 28px;
