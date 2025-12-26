@@ -74,7 +74,7 @@
   border-radius: 0.1em;
 }
 .pull-right {
-  float: right;
+  /* float: right; */
 }
 .pull-left {
   float: left;

@@ -901,8 +901,9 @@
   }
 
   .sticky-header .logo {
-    width: auto;
+    width: 200px;
     text-align: left;
+    margin-left: 121px;
   }
 
   .main-header .header-upper .logo-box {
