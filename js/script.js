@@ -592,4 +592,32 @@
 		enableMasonry();
 	});	
 
+	// Video Play on Scroll
+	if($('.video-bg').length){
+		// Create intersection observer
+		var videoObserver = new IntersectionObserver(function(entries, observer) {
+			entries.forEach(function(entry) {
+				if(entry.isIntersecting){
+					// Try to play video when in view
+					var playPromise = entry.target.play();
+					if (playPromise !== undefined) {
+						playPromise.catch(error => {
+							// Auto-play was prevented
+							// Show a UI element to let the user manually start playback
+							console.log("Autoplay prevented: " + error);
+						});
+					}
+				} else {
+					// Pause video when out of view
+					entry.target.pause();
+				}
+			});
+		}, { threshold: 0.25 }); // Play when 25% visible
+
+		// Observe each video element
+		$('.video-bg').each(function() {
+			videoObserver.observe(this);
+		});
+	}
+
 })(window.jQuery);
