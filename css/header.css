@@ -203,6 +203,15 @@
   padding: 7px 0px 6px;
 }
 
+.sticky-header .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sticky-header .mobile-nav-toggler {
+  display: none;
+}
+
 .fixed-header .sticky-header {
   z-index: 999;
   opacity: 1;
