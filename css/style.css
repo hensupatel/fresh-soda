@@ -1267,6 +1267,18 @@
 ====================================================================
 
 ***/
+.video-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.video-box video {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+}
 
 .deal-section {
   position: relative;
